@@ -1,12 +1,96 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="id">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Portfolio Saya</title>
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apriliatman Dev</title>
+
+    <style>
+        body {
+            background: #0f121a;
+            color: white;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* NAVBAR */
+        nav {
+            display: flex;
+            justify-content: space-between;
+            padding: 20px 40px;
+            background: #0d1017;
+            font-size: 18px;
+            font-weight: bold;
+        }
+        nav .menu a {
+            margin-left: 25px;
+            text-decoration: none;
+            color: white;
+        }
+        nav .logo {
+            font-size: 24px;
+        }
+
+        /* GRID */
+        .container {
+            padding: 40px;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 30px;
+        }
+
+        /* CARD */
+        .card {
+            background: #1c222d;
+            padding: 25px;
+            border-radius: 8px;
+            border-left: 8px solid #4ade80;
+            transition: 0.2s;
+        }
+        .card:hover {
+            transform: scale(1.02);
+        }
+        .card h3 {
+            margin: 0;
+            font-size: 20px;
+        }
+        .card p {
+            margin: 5px 0 15px 0;
+            opacity: 0.8;
+        }
+        .tags span {
+            background: #2b3343;
+            padding: 5px 10px;
+            border-radius: 5px;
+            margin-right: 5px;
+            font-size: 12px;
+        }
+    </style>
 </head>
+
 <body>
-  <h1>Halo, ini portfolio saya!</h1>
-</body>
-</html>
+
+    <!-- NAVBAR -->
+    <nav>
+        <div class="logo">ApriliatmanDev.</div>
+        <div class="menu">
+            <a href="#">Home</a>
+            <a href="#">Portfolio</a>
+            <a href="contact.html">Contact</a>
+        </div>
+    </nav>
+
+    <!-- GRID -->
+    <div class="container">
+
+        <div class="card" style="border-color:#4ade80">
+            <h3>Hand Gesture Detection</h3>
+            <p>AI Project</p>
+            <div class="tags">
+                <span>Python</span><span>ESP32</span>
+            </div>
+        </div>
+
+        <div class="card" style="border-color:#fb923c">
+            <h3>Web
